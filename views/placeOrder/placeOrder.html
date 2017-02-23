@@ -1,0 +1,44 @@
+<ion-view id="order">
+    <ion-content>
+            <form style="color:#fff;" class="form" name="shippingForm" novalidate>
+                <h2>Consignee:</h2>
+                Name：
+                <input style="border: 1px solid #ADD8E6; margin-top: 5px;" type="text"
+                       class="textbox" ng-model="data.name" required/>
+                <h2>Shipping Address:</h2>
+                Country<br/>
+                <select style="width: 100%;margin-bottom:10px; margin-top: 5px; border: 1px solid skyblue; height: 35px;border-radius: 3px;">
+                    <option>India</option>
+                    <option>Australia</option>
+                    <option>canada</option>
+                    <option>Franch</option>
+                    <option>Italy</option>
+                    <option>japan</option>
+                    <option>kenya</option>
+                    <option>nepal</option>
+                </select>
+                Address：
+                <textarea style="border: 1px solid skyblue;margin-top: 5px;margin-bottom:10px;width: 100%;"></textarea>
+                Postcode：
+                <input style="border: 1px solid #ADD8E6;"
+                       type="text" ng-model="data.postcode" class="textbox"/>
+                City：
+                <input style="border: 1px solid #ADD8E6; margin-top: 5px;"
+                       type="text" ng-model="data.city" class="textbox"/>
+                Road：
+                <input style="border: 1px solid #ADD8E6;"
+                       type="text" ng-model="data.road" class="textbox"/>
+                Phone：
+                <input style="border: 1px solid #ADD8E6;margin-bottom:10px;"
+                       type="text" class="textbox" ng-model="data.phone" required/>
+                <div style="text-align:center;">
+                    <button ui-sref="finish" style="width: 198px;background-color: rgb(239, 222, 204);border-color: #EFDECC; color:#000;"
+                            class="button button-positive"
+                            ng-click="sendOrder()"
+                            ng-disabled="!data.name || !data.postcode || !data.city || !data.road || !data.phone">
+                        Finish Order
+                    </button>
+                </div>
+            </form>
+    </ion-content>
+</ion-view>

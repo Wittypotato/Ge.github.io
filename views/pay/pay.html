@@ -1,0 +1,50 @@
+<ion-view title="CHECK OUT" id="pay">
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon" style="color: #FFFFFF;"></button>
+    </ion-nav-buttons>
+    <!--购物车为空提示-->
+    <ion-content style="background-color:#F2F2F2" ng-show="cart.length==0">
+        <div style="color: #000;text-align: center;padding-top: 80px;">
+            <h2 style="color: #D2AD86;">Your cart is empty!</h2>
+            <a href="#/tabs/home"
+               style="text-decoration: none;
+               color: #D2AD86;border: 1px solid #D2AD86;
+               display: inline-block;
+               width:180px;
+               height: 30px;
+               line-height: 30px;
+               border-radius: 6px;">Continue to shopping!</a>
+        </div>
+    </ion-content>
+    <ion-content style="background-color:#F2F2F2" ng-show="cart.length!=0">
+        <ion-list ng-repeat="item in cart">
+            <div class="item item-thumbnail-left card">
+                <img src="{{item.product.img}}">
+                <h2 style="font-size: 15px;">{{item.product.name}}</h2>
+                <p>Quantity:{{item.number}}</p>
+                <h3 style="margin-right:85px; font-weight: bold; color:#3CBDF2;">price：{{item.product.price | currency:'￥'}}</h3>
+                <h3 style="margin-right:85px; font-weight: bold; color:#3CBDF2;">Subtotal：{{item.product.price*item.number | currency:'￥'}}</h3>
+                <button style="position:absolute;top:37px;right: 30px;min-height: 24px;line-height: 24px;
+                font-size: 11px;background: #484848 ;color: #fff;text-decoration: none;
+                border-radius: 6px;box-shadow: 0 1px 3px rgba(0,0,0,0.6);text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+                border-bottom: 1px solid rgba(0,0,0,0.25);
+                cursor: pointer" class="button button-icon" ng-click="remove(item)">
+                    Delete
+                </button>
+            </div>
+        </ion-list>
+        <div class="card">
+            <div style="font-size: 12px;" class="item item-divider">
+                Total:<span style="float: right;">{{moneyTotal() | currency:'￥'}}</span>
+            </div>
+        </div>
+        <a style="text-decoration:none;" href="#/tabs/placeOrder">
+            <div style="width: 95%;margin: 0 auto;">
+                <button style="border-color:#EFDECC; background-color:#EFDECC;color:#000;"
+                        class="button button-block button-light">
+                    CHECK OUT
+                </button>
+            </div>
+        </a>
+    </ion-content>
+</ion-view>

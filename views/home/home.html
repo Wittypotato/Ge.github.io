@@ -1,0 +1,118 @@
+<ion-view title="Home">
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left"
+                class="button button-icon icon ion-navicon"
+                style="color: #FFFFFF;">
+        </button>
+    </ion-nav-buttons>
+    <ion-content style="background-color:#f2f2f2">
+        <!--焦点图-->
+        <ion-slide-box auto-play="true"
+                       slide-interval="2000"
+                       does-continue="true"
+                       show-pager="true"
+                       active-slide="activeIndex"
+                       pager-click="pagerClick(index)"
+                       on-slide-changed="onSlideChanged(index)">
+            <ion-slide>
+                <div class="box blue"><img style="text-align:center;width:100%"
+                                           src="images/focus-bg1.jpg"/></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box yellow"><img style="text-align:center;width:100%"
+                                             src="images/focus-bg2.jpg"/></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box pink"><img style="text-align:center;width:100%"
+                                           src="images/focus-bg3.jpg"/></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box pink"><img style="text-align:center;width:100%"
+                                           src="images/focus-bg4.jpg"/></div>
+            </ion-slide>
+        </ion-slide-box>
+        <!--购物主菜单-->
+        <a style="text-decoration:none;" href="#/tabs/hat">
+            <div style=" background-color: #EFDECC;" class="card">
+                <div class="item item-text-wrap" style="height: 150px; background-color: #EFDECC;">
+                    <h2 style="left: 25px;float: left;position: absolute; font-size: 15px;top: 70px;">
+                        HATS</h2>
+                    <img src="images/hat.png" style="height: 138px; float:right;"/>
+                    <p>Burberry&Made in Britain</br> Ladies Hats</p>
+                </div>
+            </div>
+        </a>
+        <a style="text-decoration:none;" href="#tabs/watch">
+            <div style=" background-color: #EFDECC;" class="card">
+                <div class="item item-text-wrap" style="height: 150px; background-color: #fae0e1;">
+                    <h2 style="left: 25px;float: left;font-size: 15px;position: absolute;top: 70px;">
+                        WATCH</h2>
+                    <img src="images/watch.png" style="height: 138px; float:right;"/>
+                    <p>Rolex&Made in Germany </br> Ladies Watch</p>
+                </div>
+            </div>
+        </a>
+        <div class="row">
+            <div style="" class="col col-50">
+                <a style="text-decoration:none;" href="#tabs/short">
+                    <div class="item item-text-wrap" style="height: 150px; background-color: #fff;">
+                        <h2 style="float: left;font-size: 15px;position: absolute;top: 70px;">
+                            SHORTS
+                        </h2>
+                        <img src="images/short.png" style="float: right; height: 100px; padding-top:40px;"/>
+                    </div>
+                </a>
+            </div>
+            <div style="" class="col col-50">
+                <a style="text-decoration:none;" href="#tabs/hat">
+                    <div class="item item-text-wrap" style="height: 150px; background-color: #efdecc;">
+                        <h2 style="float: left;font-size: 15px;position: absolute;top: 70px;">
+                            JACKETS
+                        </h2>
+                        <img src="images/jackets.png" style="float: right; height: 100px; padding-top:40px;"/>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div style="" class="col col-50">
+                <a style="text-decoration:none;" href="#tabs/watch">
+                    <div class="item item-text-wrap" style="height: 150px; background-color: #cef0cd;">
+                        <h2 style="float: left;font-size: 15px;position: absolute;top: 70px;">
+                            BAGS</h2>
+                        <img src="images/bags.png" style="float: right; height: 100px; padding-top: 23px;"/>
+                    </div>
+                </a>
+            </div>
+            <div style="" class="col col-50">
+                <a style="text-decoration:none;" href="#tabs/short">
+                    <div class="item item-text-wrap" style="height: 150px; background-color: #fff;">
+                        <h2 style="float: left;font-size: 15px;position: absolute;top: 70px;">
+                            SHOES</h2>
+                        <img src="images/shoes.png" style="float: right; height: 100px; padding-top:23px;"/>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div style="" class="col col-50">
+                <a style="text-decoration:none;" href="#tabs/hat">
+                    <div class="item item-text-wrap" style="height: 150px; background-color: #fff;">
+                        <h2 style="float: left;font-size: 15px;position: absolute;top: 70px;">
+                            GLASS</h2>
+                        <img src="images/sunglass.png" style="float: right; width: 69px;padding-top: 52px;"/>
+                    </div>
+                </a>
+            </div>
+            <div style="" class="col col-50">
+                <a style="text-decoration:none;" href="#tabs/watch">
+                    <div class="item item-text-wrap" style="height: 150px; background-color: #fae0e1;">
+                        <h2 style="float: left;font-size: 15px;position: absolute;top: 70px;">
+                            JEANS</h2>
+                        <img src="images/jeans.png" style="float: right; width:90px; padding-top:21px;"/>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,25 @@
+{
+  "index.html": {
+    "resources": [
+      "js/app.js",
+      "views/placeOrder/placeOrder.html",
+      "lib/ionic/js/ionic.bundle.js",
+      "views/tabs/tabsCtrl.js",
+      "views/productList/shortCtrl.js",
+      "views/pay/payCtrl.js",
+      "css/style.css",
+      "views/register/registerCtrl.js",
+      "views/placeOrder/placeOrderCtrl.js",
+      "views/finish/finishCtrl.js",
+      "views/login/login.html",
+      "lib/ionic/css/ionic.css",
+      "views/register/register.html",
+      "views/productList/watchCtrl.js",
+      "views/finish/finish.html",
+      "views/productList/hatCtrl.js",
+      "js/cart.js",
+      "views/login/loginCtrl.js",
+      "views/home/homeCtrl.js"
+    ]
+  }
+}

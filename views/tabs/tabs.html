@@ -1,0 +1,42 @@
+<!--禁止滑动拉出的侧拉框-->
+<ion-side-menus drag-content="false" id="nav">
+    <ion-side-menu-content drag-content="false">
+        <ion-nav-bar class="bar-stable">
+            <ion-nav-back-button class="button-clear" style="color: #FFF;">
+                <i class="icon ion-ios-arrow-back"></i>
+            </ion-nav-back-button>
+        </ion-nav-bar>
+        <ion-nav-view name="tabs-Content">
+
+        </ion-nav-view>
+    </ion-side-menu-content>
+    <!--导航部分-->
+    <ion-side-menu drag-content="false">
+        <ion-content>
+            <div style="text-align: center;">
+                <img style="width: 85px;padding-top: 30px;padding-bottom: 20px;"
+                     src="images/logo2.png">
+                <h1>Welcome</h1>
+            </div>
+            <ion-list>
+                <ion-item nav-clear menu-close href="#/tabs/home"
+                          style="padding: 0px; border-bottom: 2px solid rgb(204, 204, 204); z-index:999;">
+                    <img src="images/catagory.png" style="margin-right: 10px;height: 23px; margin-bottom: -4px;">Home
+                </ion-item>
+
+                <ion-item nav-clear menu-close href="#/tabs/pay"
+                          style="padding: 0px; border-bottom: 2px solid rgb(204, 204, 204); z-index:999;">
+                    <img src="images/list.png" style="margin-right: 10px;height: 23px; margin-bottom: -4px;">Shopping Cart
+                </ion-item>
+<!--                <ion-item nav-clear menu-close href=""
+                          style="padding: 0px; border-bottom: 1px solid rgb(204, 204, 204); z-index:999;">
+                    <img src="images/detail.png" style="margin-right: 10px;height: 23px; margin-bottom: -4px;">个人信息
+                </ion-item>-->
+                <ion-item nav-clear menu-close href="#/login"
+                          style="padding: 0px; border-bottom: 1px solid rgb(204, 204, 204);">
+                    <img src="images/login.png" style="margin-right: 10px;height: 23px;margin-bottom: -4px;">Login
+                </ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>

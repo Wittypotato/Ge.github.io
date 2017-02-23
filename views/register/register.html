@@ -1,0 +1,43 @@
+<ion-view id="register">
+    <ion-content>
+        <div>
+            <form style="color:#fff;" class="form">
+                Nickname
+                <input style="border: 1px solid #ADD8E6;
+                margin-top: 5px;" type="text" class="textbox"
+                ng-model="data.name" required/>
+                E-mail
+                <input style="border: 1px solid #ADD8E6;
+                margin-top: 5px;" type="text" class="textbox"
+                ng-model="data.email" required/>
+                Password
+                <input style="border: 1px solid #ADD8E6;
+                margin-top: 5px;" type="text" class="textbox"
+                ng-model="data.pwd" required/>
+                Repassword
+                <input style="border: 1px solid #ADD8E6;
+                margin-top: 5px;" type="text" class="textbox"
+                ng-model="data.repwd" required/>
+                Address
+                <input style="border: 1px solid skyblue;
+                margin-top: 5px;" type="text" class="textbox"
+                ng-model="data.address" required/>
+            </form>
+        </div>
+        <div style="text-align: center;">
+            <a href="#/tabs/home">
+                <button style="width: 190px;background-color: rgb(239, 222, 204);border-color: #EFDECC;color: #000;"
+                        class="button button-positive"
+                        ng-disabled="!data.name || !data.email || !data.pwd || !data.repwd || !data.address">
+                    Sign up Now
+                </button>
+            </a>
+            <a href="#/login">
+                <button style="width: 160px; border-color: #fff;background-color: #fff;color: #000; "
+                        class="button button-positive">
+                    Cancel
+                </button>
+            </a>
+        </div>
+    </ion-content>
+</ion-view>
